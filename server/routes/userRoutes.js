@@ -1,12 +1,12 @@
 // routes/userRoutes.js
 const express = require('express');
- // Make sure to import the User model
-
+const User = require('../models/user'); // Make sure to import the User model
+const auth = require('../middleware/auth');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
+
 const router = express.Router();
-const auth = require('../middleware/auth');
-const User = require('../models/User');
+
 
 router.get('/dashboard', auth, (req, res) => {
   res.json({ message: 'Welcome to the dashboard', user: req.user });
