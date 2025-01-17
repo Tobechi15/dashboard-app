@@ -18,7 +18,7 @@ const AddUser = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://dashboard-app-uzy6.onrender.com:5000/api/users/add', {  // Change the port to 5000
+            const response = await fetch('https://dashboard-app-uzy6.onrender.com/api/users/add', {  // Change the port to 5000
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
