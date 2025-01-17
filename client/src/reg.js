@@ -9,7 +9,7 @@ const Reg = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/api/register', {
+    const response = await fetch('http://https://dashboard-app-uzy6.onrender.com/api/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),

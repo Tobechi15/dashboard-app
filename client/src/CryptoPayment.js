@@ -26,7 +26,7 @@ const CryptoPayment = ({ user }) => {
             const email = user?.email;
 
             try {
-                const response = await axios.get(`https://dashboard-app-uzy6.onrender.com:5000/api/check-pending-transaction/${email}`);
+                const response = await axios.get(`https://dashboard-app-uzy6.onrender.com/api/check-pending-transaction/${email}`);
                 const { walletAddress, walletAddressImg, expectedCryptoAmount, startTime, message } = response.data;
 
                 if (message === 'You have an existing pending transaction.') {
@@ -54,7 +54,7 @@ const CryptoPayment = ({ user }) => {
 
     const handleCancelTransaction = async () => {
         try {
-            const response = await axios.post('https://dashboard-app-uzy6.onrender.com:5000/api/cancel-transaction', {
+            const response = await axios.post('https://dashboard-app-uzy6.onrender.com/api/cancel-transaction', {
                 walletAddress,
                 userEmail: user?.email,
             });
@@ -78,7 +78,7 @@ const CryptoPayment = ({ user }) => {
             // Cancel the transaction directly here
             const cancelTransaction = async () => {
                 try {
-                    const response = await axios.post('https://dashboard-app-uzy6.onrender.com:5000/api/cancel-transaction', {
+                    const response = await axios.post('https://dashboard-app-uzy6.onrender.com/api/cancel-transaction', {
                         walletAddress,
                         userEmail: user?.email,
                     });
@@ -114,7 +114,7 @@ const CryptoPayment = ({ user }) => {
                         return;
                     }
     
-                    const response = await axios.get(`https://dashboard-app-uzy6.onrender.com:5000/api/check-payment/${walletAddress}/${cryptoAmount}`);
+                    const response = await axios.get(`https://dashboard-app-uzy6.onrender.com/api/check-payment/${walletAddress}/${cryptoAmount}`);
                     if (response.data.status === 'confirmed') {
                         setTransactionStatus('confirmed');
                         clearInterval(pollingIntervalRef.current);
@@ -153,7 +153,7 @@ const CryptoPayment = ({ user }) => {
 
         try {
             // Request payment details from backend
-            const response = await axios.post('https://dashboard-app-uzy6.onrender.com:5000/api/payment', { amount: usdAmount, userEmail: email });
+            const response = await axios.post('https://dashboard-app-uzy6.onrender.com/api/payment', { amount: usdAmount, userEmail: email });
             const { walletAddress, walletAddressIMG, expectedCryptoAmount } = response.data;
 
             // Set values received from backend

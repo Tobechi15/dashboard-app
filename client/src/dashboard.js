@@ -35,7 +35,7 @@ function Dashboard() {
     if (!user) {
       const fetchUser = async () => {
         try {
-          const response = await fetch(`https://dashboard-app-uzy6.onrender.com:5000/api/users/${userId}`, {
+          const response = await fetch(`https://dashboard-app-uzy6.onrender.com/api/users/${userId}`, {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
