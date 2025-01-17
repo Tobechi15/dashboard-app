@@ -11,7 +11,7 @@ const PortfolioPage = ({ user }) => {
         const fetchPortfolio = async () => {
             const email = user?.email;
             try {
-                const response = await axios.get(`http://localhost:5000/api/portfolio/${email}`); // Adjust API endpoint as needed
+                const response = await axios.get(`https://dashboard-app-uzy6.onrender.com:5000/api/portfolio/${email}`); // Adjust API endpoint as needed
                 setPortfolio(response.data);
             } catch (err) {
                 console.error('Error fetching portfolio:', err);
