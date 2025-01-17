@@ -1,6 +1,6 @@
 // routes/userRoutes.js
 const express = require('express');
-const User = require('../models/user'); // Make sure to import the User model
+const User = require('../models/User'); // Make sure to import the User model
 const auth = require('../middleware/auth');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
