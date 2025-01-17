@@ -45,7 +45,7 @@ const Login = () => {
           <h2 className="text-3xl font-semibold text-center mb-6">Portal Login</h2>
           <form onSubmit={handleSubmit}>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Username</label>
               <div className="mt-1 mb-4">
                 <input type="text" name="username" placeholder="Username" onChange={handleChange}
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
