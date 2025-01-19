@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'; // Optional: install Heroicons
+import { EnvelopeIcon, PhoneIcon, UserIcon, UserPlusIcon } from '@heroicons/react/24/outline'; // Optional: install Heroicons
 import TaskDropdown from './dropdownren';
 import Contact from './contact';
 
@@ -54,12 +54,12 @@ const Mainsec = ({ userId }) => {
                     <p className="text-2xl mt-2">{user.task.task.length}</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold">Total Followers</h3>
-                    <p className="text-2xl mt-2">3000</p>
+                    <h3 className="text-xl font-semibold">New Followers</h3>
+                    <div className="flex text-2xl mt-2">30 <UserPlusIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" /></div>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-md">
                     <h3 className="text-xl font-semibold">Total Followers</h3>
-                    <p className="text-2xl mt-2">3000</p>
+                    <div className="flex text-2xl mt-2">330k <UserIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" /></div>
                 </div>
             </div>
             <div>
@@ -84,9 +84,9 @@ const Mainsec = ({ userId }) => {
                         <section className="max-w-7xl mx-auto mt-6 p-4">
 
                             <h2 className="text-xl font-bold mb-4">Campaign Management</h2>
-                            <p><strong>Campaign Name:</strong> Fall Fashion Launch 2024</p>
+                            <p><strong>Campaign Name:</strong> Fall Fashion Launch 2024/2025</p>
                             <p><strong>Start Date:</strong> October 15, 2024</p>
-                            <p><strong>End Date:</strong> November 30, 2024</p>
+                            <p><strong>End Date:</strong> November 30, 2025</p>
                             <p><strong>Target Audience:</strong> Women aged 18-35, focusing on urban areas with a high interest in fashion trends.</p>
                             <p><strong>Budget:</strong> $25,000.00</p>
 

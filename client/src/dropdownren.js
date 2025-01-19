@@ -14,7 +14,7 @@ const TaskDropdown = ({ dataList }) => {
         <p><strong>Description:</strong> {item.description}</p>
         <p><strong>Status:</strong> In Progress</p>
         <p><strong>Priority:</strong> High</p>
-        <p><strong>Due Date:</strong> October 20, 2024</p>
+        <p><strong>Due Date:</strong> march 20, 2025</p>
 
         <h3 className="text-lg font-semibold mt-4">Next Steps:</h3>
         <ul className="list-disc list-inside ml-4 mt-2">
