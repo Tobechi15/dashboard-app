@@ -33,6 +33,9 @@ app.use('/api', paymentRoutes);
 const clientBuildPath = path.join(__dirname, '../client/build');
 app.use(express.static(clientBuildPath));
 
+// Ping route for health checks
+app.get('/ping', (req, res) => res.send('Server is up!'));
+
 // Catch-all route to serve React's index.html for non-API routes
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(clientBuildPath, 'index.html'), (err) => {
