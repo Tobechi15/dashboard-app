@@ -57,7 +57,7 @@ const Sidebar = () => {
                         <DropdownTab />
                         <li className="mb-4 flex items-center px-2 rounded hover:bg-slate-100">
                             <Cog6ToothIcon className="h-5 w-5 mr-2" color='#2667ec'/>
-                            <a href="/" className="block py-2.5 rounded transition duration-200 hover:bg-slate-100">Settings</a>
+                            <a href="/dashboard/profile" className="block py-2.5 rounded transition duration-200 hover:bg-slate-100">Settings</a>
                         </li>
                         <li className="mb-4 flex items-center px-2 rounded hover:bg-slate-100">
                             <Cog6ToothIcon className="h-5 w-5 mr-2" color='#2667ec'/>
