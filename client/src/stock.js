@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { PlusCircleIcon} from '@heroicons/react/24/outline';
+import { PlusCircleIcon } from '@heroicons/react/24/outline';
 import axios from 'axios';
 
 const PortfolioPage = ({ user }) => {
@@ -40,13 +40,16 @@ const PortfolioPage = ({ user }) => {
 
             <div className="grid grid-cols-1 my-4 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Card for Total Balance */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold">Total Balance</h3>
-                    <p className="text-2xl mt-2">{portfolio.totalBalance.toFixed(2)} USD</p>
+                <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
+                    <div className='flex-1'>
+                        <h3 className="text-xl font-semibold">Balance</h3>
+                        <p className="text-2xl mt-2">{portfolio.totalBalance.toFixed(2)} USD</p>
+                    </div>
+                    <a className="w-20 flex flex-col items-center justify-center" href='/dashboard/crypto-payment'>
+                        <PlusCircleIcon className="h-20 text-gray-500"></PlusCircleIcon>
+                    </a>
                 </div>
-                <a className="w-20 flex flex-col items-center justify-center" href='/dashboard/crypto-payment'>
-                    <PlusCircleIcon className="h-20 text-gray-500"></PlusCircleIcon>
-                </a>
+
             </div>
             <div className='flex flex-wrap space-x-0 sm:space-x-4'>
                 <div className="flex-auto bg-white p-6 my-4 rounded-lg shadow-md h-auto w-[500px]">

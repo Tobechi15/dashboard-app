@@ -53,13 +53,23 @@ const Mainsec = ({ userId }) => {
                     <h3 className="text-xl font-semibold">Pending Tasks</h3>
                     <p className="text-2xl mt-2">{user.task.task.length}</p>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold">New Followers</h3>
-                    <div className="flex text-2xl mt-2">30 <UserPlusIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" /></div>
+                <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
+                    <div className='flex-1'>
+                        <h3 className="text-xl font-semibold">New Followers</h3>
+                        <div className="flex text-2xl mt-2">30 </div>
+                    </div>
+                    <div className="w-20 flex flex-col items-center justify-center">
+                        <UserPlusIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" />
+                    </div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold">Total Followers</h3>
-                    <div className="flex text-2xl mt-2">330k <UserIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" /></div>
+                <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
+                    <div className='flex-1'>
+                        <h3 className="text-xl font-semibold">Total Followers</h3>
+                        <div className="flex text-2xl mt-2">330k</div>
+                    </div>
+                    <div className="w-20 flex flex-col items-center justify-center">
+                        <UserIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" />
+                    </div>
                 </div>
             </div>
             <div>
@@ -102,112 +112,15 @@ const Mainsec = ({ userId }) => {
                         </section>
                     </div>
                     <div className="flex-1 bg-white p-6 my-4 rounded-lg shadow-md min-w-72">
-                        <h3 className="text-xl mb-2 font-semibold">Collegue</h3>
+                        <h3 className="text-xl mb-2 font-semibold">ROI</h3>
                         <hr />
                         <br />
-                        <ul>
-                            <li className="mb-4 flex items-center px-2 rounded hover:bg-gray-100">
-                                {/* Profile section */}
-                                <div className='w-full flex'>
-                                    <div className="flex items-center">
-                                        <img
-                                            className="w-10 h-10 rounded-full"
-                                            src="https://placehold.co/600x600?text=P"
-                                            alt="Profile"
-                                        />
-                                    </div>
-
-                                    <div className='flex-1'>
-                                        <a href="/" className="block mx-4 py-2.5 rounded transition duration-200">Home</a>
-                                    </div>
-                                    <div className='flex items-center'>
-                                        <PhoneIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                        <EnvelopeIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="mb-4 flex items-center px-2 rounded hover:bg-gray-100">
-                                {/* Profile section */}
-                                <div className='w-full flex'>
-                                    <div className="flex items-center">
-                                        <img
-                                            className="w-10 h-10 rounded-full"
-                                            src="https://placehold.co/600x600?text=R"
-                                            alt="Profile"
-                                        />
-                                    </div>
-
-                                    <div className='flex-1'>
-                                        <a href="/" className="block mx-4 py-2.5 rounded transition duration-200">Home</a>
-                                    </div>
-                                    <div className='flex items-center'>
-                                        <PhoneIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                        <EnvelopeIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="mb-4 flex items-center px-2 rounded hover:bg-gray-100">
-                                {/* Profile section */}
-                                <div className='w-full flex'>
-                                    <div className="flex items-center">
-                                        <img
-                                            className="w-10 h-10 rounded-full"
-                                            src="https://placehold.co/600x600?text=M"
-                                            alt="Profile"
-                                        />
-                                    </div>
-
-                                    <div className='flex-1'>
-                                        <a href="/" className="block mx-4 py-2.5 rounded transition duration-200">Home</a>
-                                    </div>
-                                    <div className='flex items-center'>
-                                        <PhoneIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                        <EnvelopeIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="mb-4 flex items-center px-2 rounded hover:bg-gray-100">
-                                {/* Profile section */}
-                                <div className='w-full flex'>
-                                    <div className="flex items-center">
-                                        <img
-                                            className="w-10 h-10 rounded-full"
-                                            src="https://placehold.co/600x600?text=J"
-                                            alt="Profile"
-                                        />
-                                    </div>
-
-                                    <div className='flex-1'>
-                                        <a href="/" className="block mx-4 py-2.5 rounded transition duration-200">Home</a>
-                                    </div>
-                                    <div className='flex items-center'>
-                                        <PhoneIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                        <EnvelopeIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                    </div>
-                                </div>
-                            </li>
-                            <li className="mb-4 flex items-center px-2 rounded hover:bg-gray-100">
-                                {/* Profile section */}
-                                <div className='w-full flex'>
-                                    <div className="flex items-center">
-                                        <img
-                                            className="w-10 h-10 rounded-full"
-                                            src="https://placehold.co/600x600?text=T"
-                                            alt="Profile"
-                                        />
-                                    </div>
-
-                                    <div className='flex-1'>
-                                        <a href="/" className="block mx-4 py-2.5 rounded transition duration-200">Home</a>
-                                    </div>
-                                    <div className='flex items-center'>
-                                        <PhoneIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                        <EnvelopeIcon className="h-5 w-5 mr-2 text-gray-200 hover:text-black" />
-                                    </div>
-                                </div>
-                            </li>
-
-                        </ul>
+                        <div className='flex items-center justify-center'>
+                            <div className='h-40 w-40 flex flex-col text-6xl bg-blue-300 rounded-full items-center justify-center '>
+                                <p className='text-xl'>ROI</p>
+                                26%
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

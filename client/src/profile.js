@@ -78,7 +78,7 @@ const Profile = ({ userId }) => {
                     </form>
                 </div>
                 <div>
-                    <img className='h-30 w-40 rounded-full shadow-lg outline-' src={link} alt='profile' />
+                    <img className='h-30 w-40 rounded-full shadow-lg outline-4' src={link} alt='profile' />
                 </div>
             </div>
 
