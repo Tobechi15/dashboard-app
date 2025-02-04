@@ -78,7 +78,7 @@ const Sidebar = () => {
                 className="md:hidden p-2 text-white bg-blue-800 fixed top-4 left-4 z-50"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                {isOpen ? <XMarkIcon className="h-10 w-12"/> : <Bars3CenterLeftIcon className="h-10 w-12"/>}
+                {isOpen ? <XMarkIcon className="h-10 w-10"/> : <Bars3CenterLeftIcon className="h-10 w-10"/>}
             </button>
 
         </div>

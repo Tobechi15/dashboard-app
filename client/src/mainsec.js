@@ -1,6 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
-import { EnvelopeIcon, PhoneIcon, UserIcon, UserPlusIcon } from '@heroicons/react/24/outline'; // Optional: install Heroicons
+import { PlayIcon, ClockIcon, UserGroupIcon, UserPlusIcon } from '@heroicons/react/24/outline'; // Optional: install Heroicons
 import TaskDropdown from './dropdownren';
 import Contact from './contact';
 
@@ -45,13 +45,23 @@ const Mainsec = ({ userId }) => {
 
             <div className="grid grid-cols-1 my-4 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Example cards for analytics */}
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold">Active Campaigns</h3>
-                    <p className="text-2xl mt-2">1</p>
+                <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
+                    <div className='flex-1'>
+                        <h3 className="text-xl font-semibold">Active Campaigns</h3>
+                        <p className="text-2xl mt-2">1</p>
+                    </div>
+                    <div className="w-20 flex flex-col items-center justify-center">
+                        <PlayIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" />
+                    </div>
                 </div>
-                <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-semibold">Pending Tasks</h3>
-                    <p className="text-2xl mt-2">{user.task.task.length}</p>
+                <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
+                    <div className='flex-1'>
+                        <h3 className="text-xl font-semibold">Pending Tasks</h3>
+                        <p className="text-2xl mt-2">{user.task.task.length}</p>
+                    </div>
+                    <div className="w-20 flex flex-col items-center justify-center">
+                        <ClockIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" />
+                    </div>
                 </div>
                 <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
                     <div className='flex-1'>
@@ -68,7 +78,7 @@ const Mainsec = ({ userId }) => {
                         <div className="flex text-2xl mt-2">330k</div>
                     </div>
                     <div className="w-20 flex flex-col items-center justify-center">
-                        <UserIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" />
+                        <UserGroupIcon className="h-10 w-10 ml-6 text-gray-600 hover:text-black" />
                     </div>
                 </div>
             </div>
