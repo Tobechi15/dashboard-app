@@ -6,8 +6,8 @@ const Portfolio = () => {
         <div>
             {/* main */}
             <br />
-            <h2 className="text-3xl font-semibold">Portfolio Content</h2>
-            <p className="mt-4">This is the main content of the portfolio.</p>
+            <h2 className="text-3xl font-semibold">Portfolio</h2>
+
 
             <div className="grid grid-cols-1 my-4 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Example cards for analytics */}
