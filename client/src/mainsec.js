@@ -112,7 +112,7 @@ const Mainsec = ({ userId }) => {
                                     <div className="flex items-center">
                                         <img
                                             className="w-10 h-10 rounded-full"
-                                            src="https://via.placeholder.com/40"
+                                            src="https://placehold.co/600x600?text=P"
                                             alt="Profile"
                                         />
                                     </div>
@@ -132,7 +132,7 @@ const Mainsec = ({ userId }) => {
                                     <div className="flex items-center">
                                         <img
                                             className="w-10 h-10 rounded-full"
-                                            src="https://via.placeholder.com/40"
+                                            src="https://placehold.co/600x600?text=R"
                                             alt="Profile"
                                         />
                                     </div>
@@ -152,7 +152,7 @@ const Mainsec = ({ userId }) => {
                                     <div className="flex items-center">
                                         <img
                                             className="w-10 h-10 rounded-full"
-                                            src="https://via.placeholder.com/40"
+                                            src="https://placehold.co/600x600?text=M"
                                             alt="Profile"
                                         />
                                     </div>
@@ -172,7 +172,7 @@ const Mainsec = ({ userId }) => {
                                     <div className="flex items-center">
                                         <img
                                             className="w-10 h-10 rounded-full"
-                                            src="https://via.placeholder.com/40"
+                                            src="https://placehold.co/600x600?text=J"
                                             alt="Profile"
                                         />
                                     </div>
@@ -192,7 +192,7 @@ const Mainsec = ({ userId }) => {
                                     <div className="flex items-center">
                                         <img
                                             className="w-10 h-10 rounded-full"
-                                            src="https://via.placeholder.com/40"
+                                            src="https://placehold.co/600x600?text=T"
                                             alt="Profile"
                                         />
                                     </div>
