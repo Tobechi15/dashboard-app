@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import {HomeIcon, ChartBarIcon, CurrencyDollarIcon, Cog6ToothIcon, ChevronDownIcon, ChevronRightIcon, WalletIcon, ArrowTrendingUpIcon} from '@heroicons/react/24/outline'; // Optional: install Heroicons
+import {HomeIcon, XMarkIcon, Bars3CenterLeftIcon, ChartBarIcon, CurrencyDollarIcon, Cog6ToothIcon, ChevronDownIcon, ChevronRightIcon, WalletIcon, ArrowTrendingUpIcon} from '@heroicons/react/24/outline'; // Optional: install Heroicons
 import Logout from './logout';
 
 const DropdownTab = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
     return (
         <div>
@@ -75,10 +75,10 @@ const Sidebar = () => {
 
             {/* Mobile Toggle Button */}
             <button
-                className="md:hidden p-4 text-white bg-blue-800 fixed top-4 left-4 z-50"
+                className="md:hidden p-2 text-white bg-blue-800 fixed top-4 left-4 z-50"
                 onClick={() => setIsOpen(!isOpen)}
             >
-                {isOpen ? 'Close' : 'Menu'}
+                {isOpen ? <XMarkIcon className="h-10 w-12"/> : <Bars3CenterLeftIcon className="h-10 w-12"/>}
             </button>
 
         </div>
