@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {HomeIcon, ChartBarIcon, Cog6ToothIcon, ChevronDownIcon, ChevronRightIcon, WalletIcon, ArrowTrendingUpIcon} from '@heroicons/react/24/outline'; // Optional: install Heroicons
+import {HomeIcon, ChartBarIcon, CurrencyDollarIcon, Cog6ToothIcon, ChevronDownIcon, ChevronRightIcon, WalletIcon, ArrowTrendingUpIcon} from '@heroicons/react/24/outline'; // Optional: install Heroicons
 import Logout from './logout';
 
 const DropdownTab = () => {
@@ -60,9 +60,9 @@ const Sidebar = () => {
                             <a href="/dashboard/profile" className="block py-2.5 rounded transition duration-200 hover:bg-slate-100">Settings</a>
                         </li>
                         <li className="mb-4 flex items-center px-2 rounded hover:bg-slate-100">
-                            <Cog6ToothIcon className="h-5 w-5 mr-2" color='#2667ec'/>
+                            <CurrencyDollarIcon className="h-5 w-5 mr-2" color='#2667ec'/>
                             <a href="/dashboard/crypto-payment" className="block py-2.5 px-4 rounded transition duration-200 hover:bg-slate-100">
-                                Crypto Payment
+                                Payment
                             </a>
                         </li>
                     </ul>
