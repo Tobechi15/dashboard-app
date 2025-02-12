@@ -63,7 +63,7 @@ function Dashboard() {
             <Navbar user={user} />
             <Sidebar />
             
-            <div className="flex-1 md:ml-64 p-4 pt-16">
+            <div className="flex-1 md:ml-64 p-6 pt-16">
                 <Routes>
                     <Route path="/profile" element={<Profile userId={userId} />} />
                     <Route path="/Portfolio" element={<Portfolio />} />
