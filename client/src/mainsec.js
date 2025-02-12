@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { PlayIcon, ClockIcon, UserGroupIcon, UserPlusIcon } from '@heroicons/react/24/outline'; // Optional: install Heroicons
 import TaskDropdown from './dropdownren';
 import Contact from './contact';
+import ReactLoading from 'react-loading';
 
 const Mainsec = ({ userId }) => {
     const [user, setUser] = useState(null);
@@ -33,7 +34,12 @@ const Mainsec = ({ userId }) => {
     }, [userId]);
 
     if (!user) {
-        return <div>Loading user data...</div>;
+
+        return (
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <ReactLoading type="spin" color="#3498db" height={50} width={50} />
+            </div>
+        );
     }
     console.log(user.task);
     return (
@@ -44,7 +50,7 @@ const Mainsec = ({ userId }) => {
 
             <div className="grid grid-cols-1 my-4 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Example cards for analytics */}
-                <div className="flex flex-wrap space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
+                <div className="flex space-x-0 sm:space-x-4 bg-white p-6 rounded-lg shadow-md">
                     <div className='flex-1'>
                         <h3 className="text-xl font-semibold">Active Campaigns</h3>
                         <p className="text-2xl mt-2">1</p>

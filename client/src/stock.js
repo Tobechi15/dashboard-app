@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PlusCircleIcon } from '@heroicons/react/24/outline';
 import axios from 'axios';
+import ReactLoading from 'react-loading';
 
 const PortfolioPage = ({ user }) => {
     const [portfolio, setPortfolio] = useState({ totalBalance: 0, transactions: [] });
@@ -25,7 +26,11 @@ const PortfolioPage = ({ user }) => {
     }, [user]);
 
     if (loading) {
-        return <div>Loading portfolio...</div>;
+        return (
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <ReactLoading type="spin" color="#3498db" height={50} width={50} />
+            </div>
+        );
     }
 
     if (error) {
